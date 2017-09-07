@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>homework2_rent module &#8212; Applied Machine Learning HW2 2/27/17 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2/27/17',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-homework2_rent">
+<span id="homework2-rent-module"></span><h1>homework2_rent module<a class="headerlink" href="#module-homework2_rent" title="Permalink to this headline">¶</a></h1>
+<p>Created on Fri Feb 24 20:00:06 2017</p>
+<p>&#64;author: oser</p>
+<dl class="function">
+<dt id="homework2_rent.predict_rent">
+<code class="descclassname">homework2_rent.</code><code class="descname">predict_rent</code><span class="sig-paren">(</span><em>X_test</em>, <em>y_test</em>, <em>reg</em><span class="sig-paren">)</span><a class="headerlink" href="#homework2_rent.predict_rent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the R^2 score of the regresssion model on the test data
+Parameters
+&#8212;&#8212;&#8212;-
+X_test : Numpy array or Pandas Dataframe</p>
+<blockquote>
+<div>The training examples features</div></blockquote>
+<dl class="docutils">
+<dt>y_test</dt>
+ <span class="classifier-delimiter">:</span> <span class="classifier">Numpy array or Pandas Dataframe</span><dd>the training example responses</dd>
+<dt>reg: sklearn pipeline</dt>
+<dd>the model trained on the training set</dd>
+</dl>
+<dl class="docutils">
+<dt>mean</dt>
+ <span class="classifier-delimiter">:</span> <span class="classifier">float</span><dd>The mean of the regression R^2 score</dd>
+<dt>std</dt>
+ <span class="classifier-delimiter">:</span> <span class="classifier">float</span><dd>The standard deviation of the regression R^2 score</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="homework2_rent.rent_score">
+<code class="descclassname">homework2_rent.</code><code class="descname">rent_score</code><span class="sig-paren">(</span><em>X_train</em>, <em>y_train</em>, <em>X_test</em>, <em>categoricals</em><span class="sig-paren">)</span><a class="headerlink" href="#homework2_rent.rent_score" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train the rent prediction model on the Train dataset 
+and compute the mean and variance of the R^2 score of the regression
+using cross validation
+Parameters
+&#8212;&#8212;&#8212;-
+X_train : Numpy array or Pandas Dataframe</p>
+<blockquote>
+<div>The training examples features</div></blockquote>
+<dl class="docutils">
+<dt>y_train</dt>
+ <span class="classifier-delimiter">:</span> <span class="classifier">Numpy array or Pandas Dataframe</span><dd>the training example responses</dd>
+<dt>categoricals: list</dt>
+<dd>the set of categorical variables to be passed to the OneHotEncoder</dd>
+</dl>
+<dl class="docutils">
+<dt>mean</dt>
+ <span class="classifier-delimiter">:</span> <span class="classifier">float</span><dd>The mean of the regression R^2 score</dd>
+<dt>std</dt>
+ <span class="classifier-delimiter">:</span> <span class="classifier">float</span><dd>The standard deviation of the regression R^2 score</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/source/homework2_rent.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, Franck Ngamkan.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="../_sources/source/homework2_rent.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

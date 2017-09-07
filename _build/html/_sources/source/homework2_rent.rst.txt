@@ -1,0 +1,7 @@
+homework2_rent module
+=====================
+
+.. automodule:: homework2_rent
+    :members:
+    :undoc-members:
+    :show-inheritance:
